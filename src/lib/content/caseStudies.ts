@@ -177,6 +177,92 @@ export const caseStudies: CaseStudy[] = [
     roi: "Equivalent to 60 engineer-years reclaimed annually.",
     year: "2024",
   },
+  {
+    slug: "ai-augmented-engineering",
+    client: "A mid-size IT services firm",
+    clientType: "Technology · 1,200 engineers",
+    industry: "Technology",
+    title:
+      "Turning AI tooling into measurable developer productivity",
+    excerpt:
+      "We re-engineered a mid-size IT firm's developer workflows around context-driven prompting and agentic integration, turning AI tooling spend into measurable productivity.",
+    overview:
+      "A well-established mid-size IT services firm had aggressively adopted AI-assisted coding tools across 1,200 engineers. Despite a significant financial commitment, leadership observed a paradox: rather than accelerating output, teams reported increased friction, frequent context-switching, and a reliance on trial-and-error that slowed the development lifecycle.",
+    challenge:
+      "Close the gap between AI investment and ground-level execution. Engineers treated AI tools as generic search engines with no architectural context, workflows stayed fragmented with internal toolsets AI couldn't reach, time-to-correct AI-generated code frequently exceeded manual effort, and code quality and security compliance became harder to monitor without a standardized approach.",
+    approach:
+      "We moved the organization from 'AI usage' to 'AI-augmented engineering,' shifting focus from tools to underlying engineering practices. A diagnostics phase mapped context-loss points in real workflows; a tailored competency framework upskilled engineers on prompt and context management; an agentic strategy moved interaction from chat to purpose-built agents; and we wrapped the client's proprietary internal tools behind modern interfaces so AI models could reach them directly via the Model Context Protocol.",
+    stack: [
+      "Model Context Protocol",
+      "Agentic workflows",
+      "Prompt engineering",
+      "Context-aware development",
+      "Internal toolchain adapters",
+    ],
+    results: [
+      { metric: "47%", label: "Faster time-to-first-functional-commit" },
+      { metric: "3.2x", label: "Increase in AI-assisted throughput per engineer" },
+      { metric: "68%", label: "Reduction in iterative prompt cycles" },
+      { metric: "0", label: "Manual context-copying between tools and AI" },
+    ],
+    impact:
+      "Iterative prompting fell sharply as teams fed architectural context systematically, cutting time-to-first-functional-commit by 47%. Removing manual context-copying lifted developer engagement and satisfaction, and the firm shifted from siloed, experimental tool usage to a unified, organization-wide AI strategy. The AI tooling investment began yielding the outcomes leadership had originally intended.",
+    roi: "241% over 18 months, payback in 6 months.",
+    year: "2025",
+    featured: true,
+  },
+  {
+    slug: "automated-support-security-retail",
+    client: "A high-growth security retailer",
+    clientType: "Retail · Security & surveillance hardware",
+    industry: "Retail",
+    title: "Context-aware automation that scaled support without scaling headcount",
+    excerpt:
+      "A RAG-based conversational agent grounded in official technical literature resolved routine inquiries autonomously and cut unnecessary field-service dispatch.",
+    overview:
+      "A high-growth retailer specializing in high-end security and surveillance hardware saw support demand climb with its install base. Because the products demand technical precision, inquiries were complex — intricate configuration questions and critical troubleshooting — and repetitive queries overwhelmed the support team, keeping them from high-value escalations.",
+    challenge:
+      "Manual support could no longer scale with sales. Routine device-configuration requests created operational bottlenecks, technical knowledge stayed locked in dense manuals and SOPs, and the process for deciding whether a technician visit was required was slow and manual — causing unnecessary dispatches and delayed resolutions for real hardware failures.",
+    approach:
+      "We converted technical documentation into an active, intelligent asset rather than deploying a generic chatbot. We engineered a verified knowledge base from product manuals, SOPs, and historical support data; designed a retrieval-augmented (RAG) conversational agent grounded strictly in approved literature; built workflow logic gates separating user-fixable issues from service-required failures; and integrated the agent with internal service-management systems for seamless field-service scheduling.",
+    stack: ["RAG", "Conversational AI", "Vector search", "Service-management integration", "Domain prompt engineering"],
+    results: [
+      { metric: "61%", label: "Of routine inquiries resolved without human intervention" },
+      { metric: "38%", label: "Reduction in no-fault-found technician visits" },
+      { metric: "24/7", label: "Instant, documentation-grounded technical assistance" },
+      { metric: "2.3x", label: "Increase in first-contact resolution rate" },
+    ],
+    impact:
+      "A significant share of routine technical inquiries now resolves autonomously, freeing the support team for higher-complexity cases. Intelligent dispatch filtering sharply reduced no-fault-found technician visits, lowering field-service cost. Customers receive instant, accurate assistance around the clock, and every recommendation stays tethered to the latest approved documentation — preserving safety and reliability standards.",
+    roi: "198% over 18 months, payback in 7 months.",
+    year: "2025",
+  },
+  {
+    slug: "llm-economics-optimization",
+    client: "A mid-size IT services organization",
+    clientType: "Technology · AI-enabled product engineering",
+    industry: "Technology",
+    title: "Decoupling AI token spend from usage growth",
+    excerpt:
+      "Intelligent model routing and context-efficient memory management cut token costs 40% while usage climbed 1.5x — flipping the cost-growth curve.",
+    overview:
+      "A mid-size IT services firm had integrated AI into its development and support workflows, but faced a cost-scaling trap: as usage grew, API token costs grew linearly, threatening the economic viability of its AI initiatives. Frontier-grade, high-cost models handled every task regardless of complexity, and there was no centralized control over how context was managed across sessions.",
+    challenge:
+      "Close the architectural mismatch between task requirements and model utilization. Expensive high-reasoning models were used for routine work like unit-test generation and syntax checks, causing massive cost leakage; lack of standardized session management led to context inflation with every interaction carrying full conversation history; and without a routing layer, developers consumed tokens with no visibility into cost-to-value, producing uncontrolled monthly spikes in provider bills.",
+    approach:
+      "We shifted the firm from ad-hoc AI usage to a governed AI platform. A smart routing layer classified requests by complexity and routed each to the most cost-effective model meeting the quality threshold; we re-engineered session lifecycle management from stateless growth to structured summarization and context trimming; introduced global prompt templates to eliminate redundant system instructions; and deployed a lightweight proxy layer for real-time cost visibility and budget guardrails at team and project levels.",
+    stack: ["Model routing", "AI gateway", "Context summarization", "Token budgeting", "RAG"],
+    results: [
+      { metric: "40%", label: "Reduction in total token costs" },
+      { metric: "1.5x", label: "Increase in model usage over the same period" },
+      { metric: "52%", label: "Faster median response via smaller-model routing" },
+      { metric: "100%", label: "Of AI spend visible by team and project" },
+    ],
+    impact:
+      "Token costs fell 40% even as usage climbed 1.5x, effectively flipping the cost-growth curve. Leadership gained clear insight into AI consumption, turning a black-box expense into a predictable, manageable line item. Rerouting simple queries to smaller, faster models improved overall response time, and the firm now scales AI adoption across the organization without fear of exponential cost increases.",
+    roi: "176% over 12 months, payback in 5 months.",
+    year: "2025",
+  },
 ];
 
 export const featuredCaseStudies = caseStudies.filter((c) => c.featured);
