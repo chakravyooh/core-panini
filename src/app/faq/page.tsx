@@ -9,7 +9,7 @@ import { FinalCta } from "@/components/final-cta";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers to the questions we hear most — about senior staffing, pricing, timelines, augmentation, industries, and how we handle confidential and regulated work.",
+    "Answers to the questions we hear most — about experienced staffing, pricing, timelines, augmentation, industries, and how we handle confidential and regulated work.",
   alternates: { canonical: "/faq" },
 };
 

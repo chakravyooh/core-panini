@@ -1,9 +1,9 @@
 export const site = {
   name: "Core Panini",
   shortName: "Panini",
-  tagline: "Senior Technology Specialists",
+  tagline: "Your Growth Partner",
   description:
-    "An IT consultancy of senior specialists solving complex business problems through technology.",
+    "A Growth Partner helping ambitious businesses scale with confidence — through experienced leadership across technology, AI, data, product, and compliance.",
   email: "hello@corepanini.com",
   phone: "+1 (415) 555-0142",
   linkedin: "https://www.linkedin.com/company/core-panini",
@@ -51,7 +51,7 @@ export const nav: NavItem[] = [
       {
         label: "CTO Advisory",
         href: "/#expertise",
-        description: "Senior leadership on demand.",
+        description: "Experienced leadership on demand.",
       },
     ],
   },

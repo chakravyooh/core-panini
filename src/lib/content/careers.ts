@@ -1,9 +1,9 @@
 export const careers = {
   intro:
-    "We hire senior people to do senior work. Low ego, high standard, and the kind of accountability that comes from having carried production at scale.",
+    "We hire experienced people to do the hard work. Low ego, high standard, and the kind of accountability that comes from having carried production at scale.",
   perks: [
     "Remote-native, time-zone-aware",
-    "Senior colleagues only",
+    "Experienced colleagues only",
     "Meaningful equity",
     "Generous learning budget",
     "No billing-hour targets",

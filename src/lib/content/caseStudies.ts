@@ -263,6 +263,32 @@ export const caseStudies: CaseStudy[] = [
     roi: "176% over 12 months, payback in 5 months.",
     year: "2025",
   },
+  {
+    slug: "supply-chain-resilience-3pl",
+    client: "A global third-party logistics provider",
+    clientType: "Logistics · 3PL across 4 continents",
+    industry: "Logistics",
+    title: "From fragmented visibility to real-time operational intelligence",
+    excerpt:
+      "A cloud-native lakehouse unified siloed regional data into a single source of truth, cutting decision-latency by 53% and ending weekly manual roll-ups.",
+    overview:
+      "A large-scale 3PL firm managing global supply chains for major retailers expanded across four continents, but its data architecture failed to keep pace. The firm operated a patchwork of regional ERPs, proprietary tracking software, and Excel spreadsheets used by local operations teams — making true control-tower visibility impossible.",
+    challenge:
+      "Restore the control-tower visibility promised to enterprise clients. Regional operations teams could not see upstream or downstream cargo status, creating black-hole periods during international transit; the central office relied on manual weekly data aggregation that was stale by publication; and when disruptions like port delays or customs holds occurred, there was no unified data to model the impact — teams depended on fragmented, anecdotal communication.",
+    approach:
+      "We shifted focus from data collection to operational intelligence with a unified architecture serving as a single source of truth. A global data dictionary standardized metrics across regions; we architected a cloud-native lakehouse ingesting from regional ERPs, real-time IoT fleet telematics, and external customs APIs; and we built a centralized control-tower dashboard layer with automated delay alerts and what-if disruption simulation.",
+    stack: ["Cloud lakehouse", "IoT telematics", "ETL/ELT", "Master data management", "Real-time alerting"],
+    results: [
+      { metric: "53%", label: "Reduction in decision-latency after a disruption" },
+      { metric: "4→1", label: "Regional data silos unified into one source of truth" },
+      { metric: "Real-time", label: "Global shipment visibility, replacing weekly roll-ups" },
+      { metric: "0", label: "Manual weekly status reports still produced by central office" },
+    ],
+    impact:
+      "The executive team now monitors global shipment status in near real-time, eliminating stale weekly roll-ups. The time between a disruption occurring and a mitigation strategy being implemented fell by more than half. The firm leveraged the platform to give customers high-fidelity real-time tracking, strengthening its premium 3PL market position, and regional offices now operate on a unified metric set that enables cross-geography performance comparison.",
+    roi: "204% over 18 months, payback in 8 months.",
+    year: "2024",
+  },
 ];
 
 export const featuredCaseStudies = caseStudies.filter((c) => c.featured);

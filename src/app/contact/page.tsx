@@ -28,7 +28,7 @@ export default function ContactPage() {
             <span className="text-ink-3">conversation.</span>
           </>
         }
-        lead="If the problem matters enough to warrant senior people, it matters enough to reach out. We reply to every inquiry within one business day."
+        lead="If the challenge matters enough to warrant experienced leaders, it matters enough to reach out. We reply to every inquiry within one business day."
       />
 
       <section className="pb-4">

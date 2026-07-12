@@ -11,7 +11,7 @@ import { careers } from "@/lib/content/careers";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "We hire senior people to do senior work. Low ego, high standard, and the accountability that comes from carrying production at scale.",
+    "We hire experienced people to do the hard work. Low ego, high standard, and the accountability that comes from carrying production at scale.",
   alternates: { canonical: "/careers" },
 };
 
@@ -22,9 +22,9 @@ export default function CareersPage() {
         eyebrow="Careers"
         title={
           <>
-            Senior people doing
+            Experienced people doing
             <br />
-            <span className="text-ink-3">senior work.</span>
+            <span className="text-ink-3">the hard work.</span>
           </>
         }
         lead={careers.intro}
@@ -62,7 +62,7 @@ export default function CareersPage() {
                 <span className="text-ink-3">always hiring for.</span>
               </>
             }
-            lead="We do not always have a posted opening — but we are always interested in the right senior person."
+            lead="We do not always have a posted opening — but we are always interested in the right experienced person."
           />
           <div className="mt-12 flex flex-col">
             {careers.roles.map((r) => (
@@ -106,7 +106,7 @@ export default function CareersPage() {
 
       <FinalCta
         title="Don't see your role?"
-        body="If you carry senior production responsibility and share our standard, write to us. We read every message."
+        body="If you carry production responsibility and share our standard, write to us. We read every message."
         primaryHref="/contact"
         primaryLabel="Make an introduction"
       />

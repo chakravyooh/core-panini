@@ -1,6 +1,6 @@
 export const faq = [
   {
-    q: "Are your consultants actually senior?",
+    q: "Are your consultants actually experienced?",
     a: "Yes. Every engagement is staffed with specialists who have carried production responsibility at scale. We do not put juniors on client work. The people who scope the work do the work.",
   },
   {
@@ -9,7 +9,7 @@ export const faq = [
   },
   {
     q: "Do you work with existing teams or only independently?",
-    a: "Both. We frequently embed alongside internal teams, providing senior capacity and leadership while transferring knowledge. We are equally comfortable owning a full scope end-to-end.",
+    a: "Both. We frequently embed alongside internal teams, providing experienced capacity and leadership while transferring knowledge. We are equally comfortable owning a full scope end-to-end.",
   },
   {
     q: "How fast can you start?",
@@ -17,7 +17,7 @@ export const faq = [
   },
   {
     q: "Do you do staff augmentation?",
-    a: "We provide senior specialists — architects, staff engineers, leads — rather than general developers. If you need volume, we will say so and recommend partners.",
+    a: "We provide experienced specialists — architects, staff engineers, leads — rather than general developers. If you need volume, we will say so and recommend partners.",
   },
   {
     q: "What industries do you work in?",

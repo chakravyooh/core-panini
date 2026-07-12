@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export function FinalCta({
   title = "Let's talk about the decision that decides the next decade.",
-  body = "If the problem matters enough to warrant senior people, it matters enough to start the conversation.",
+  body = "If the problem matters enough to warrant experienced leaders, it matters enough to start the conversation.",
   primaryHref = "/contact",
   primaryLabel = "Start a conversation",
   secondaryHref = "/case-studies",

@@ -75,19 +75,19 @@ export const insights: Insight[] = [
     ],
   },
   {
-    slug: "senior-teams-shipping",
-    title: "Why senior teams ship faster",
+    slug: "experienced-teams-shipping",
+    title: "Why experienced teams ship faster",
     excerpt:
-      "The counterintuitive economics of senior-only teams. Density beats headcount, and the cost model that looks expensive rarely is.",
+      "The counterintuitive economics of experienced-only teams. Density beats headcount, and the cost model that looks expensive rarely is.",
     category: "Leadership",
     date: "2025-05-21",
     readTime: "5 min",
     author: "Marcus Okafor",
     body: [
-      "There is a persistent belief that senior teams are more expensive. In practice, on hard problems, they are dramatically cheaper.",
-      "A senior engineer makes fewer of the decisions that create future cost: fewer architectural dead ends, fewer abstractions that must later be unwound, fewer incidents that absorb the team for weeks. Density beats headcount.",
-      "The cost that matters is the cost of the outcome, not the cost of the seat. A small senior team that ships the right thing once is cheaper than a large team that ships the wrong thing twice and maintains it for years.",
-      "This is the economics behind specialist consultancies. It is also the economics every engineering leader should apply internally: hire for density, protect focus, and let senior people do senior work.",
+      "There is a persistent belief that experienced teams are more expensive. In practice, on hard problems, they are dramatically cheaper.",
+      "An experienced engineer makes fewer of the decisions that create future cost: fewer architectural dead ends, fewer abstractions that must later be unwound, fewer incidents that absorb the team for weeks. Density beats headcount.",
+      "The cost that matters is the cost of the outcome, not the cost of the seat. A small experienced team that ships the right thing once is cheaper than a large team that ships the wrong thing twice and maintains it for years.",
+      "This is the economics behind specialist consultancies. It is also the economics every engineering leader should apply internally: hire for density, protect focus, and let experienced people do the hard work.",
     ],
   },
   {

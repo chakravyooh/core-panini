@@ -52,14 +52,17 @@ export function ExpertiseSection() {
           <Reveal>
             <Eyebrow>Expertise</Eyebrow>
             <h2 className="h2 mt-5">
-              Eighteen disciplines.
+              Deep expertise.
               <br />
-              <span className="text-ink-3">One standard.</span>
+              <span className="text-ink-3">Unified execution.</span>
             </h2>
             <p className="lead mt-6 max-w-md">
-              We are senior specialists across strategy, AI, engineering, cloud,
-              security, and leadership — organized to solve problems that cross
-              every one of those boundaries.
+              Growth challenges rarely belong to one domain. That&apos;s why
+              we&apos;ve
+              brought together experienced specialists across AI, engineering,
+              product, data, cloud, security, compliance, and technology
+              leadership — working as one team to deliver practical, measurable
+              outcomes.
             </p>
           </Reveal>
           <Reveal delay={0.1} className="min-w-0">

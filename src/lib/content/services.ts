@@ -84,7 +84,7 @@ export const services: Service[] = [
     group: "Engineering",
     summary: "Software built to scale and to last.",
     detail:
-      "Senior engineers who own outcomes. We build the hard parts — the services, the interfaces, the integrations — with a craft standard most teams never reach.",
+      "Experienced engineers who own outcomes. We build the hard parts — the services, the interfaces, the integrations — with a craft standard most teams never reach.",
     capabilities: [
       "Greenfield platforms",
       "Legacy modernization",
@@ -196,7 +196,7 @@ export const services: Service[] = [
     group: "Engineering",
     summary: "The right design for the problem.",
     detail:
-      "Senior architects who design the right thing — balancing constraints, integrations, and lifespan — and document it so teams can execute.",
+      "Experienced architects who design the right thing — balancing constraints, integrations, and lifespan — and document it so teams can execute.",
     capabilities: [
       "Solution design & review",
       "Integration architecture",
@@ -208,7 +208,7 @@ export const services: Service[] = [
     slug: "software-development",
     name: "Software Development",
     group: "Engineering",
-    summary: "Production code, senior hands.",
+    summary: "Production code, experienced hands.",
     detail:
       "Engineers who write the code that ships — clean, tested, and maintainable — embedded with your team or delivering against a fixed scope.",
     capabilities: [
@@ -222,9 +222,9 @@ export const services: Service[] = [
     slug: "team-augmentation",
     name: "Team Augmentation",
     group: "Engineering",
-    summary: "Senior specialists, when you need them.",
+    summary: "Experienced specialists, when you need them.",
     detail:
-      "Embed senior expertise where capacity is thin — architects, staff engineers, and leads who raise the level of the team around them.",
+      "Embed experienced specialists where capacity is thin — architects, staff engineers, and leads who raise the level of the team around them.",
     capabilities: [
       "Staff & principal engineers",
       "Technical leadership",
@@ -250,7 +250,7 @@ export const services: Service[] = [
     slug: "cto-advisory",
     name: "CTO Advisory",
     group: "Leadership",
-    summary: "A senior sounding board for hard calls.",
+    summary: "An experienced sounding board for hard calls.",
     detail:
       "Confidential advisory for technology leaders facing the calls that define careers — architecture, build vs. buy, rewrites, and scale.",
     capabilities: [

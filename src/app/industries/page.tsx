@@ -20,12 +20,12 @@ export default function IndustriesPage() {
         eyebrow="Industries"
         title={
           <>
-            Sector knowledge that earns
+            Experience that earns trust
             <br />
-            <span className="text-ink-3">the first conversation.</span>
+            <span className="text-ink-3">from the first conversation.</span>
           </>
         }
-        lead="Specialists who have carried responsibility inside the industry — not just read about it. The patterns transfer; the trust has to be earned."
+        lead="Our specialists have built, scaled, and led technology initiatives within the industries they serve. We bring practical insight shaped by real-world experience — not just frameworks and best practices."
       >
         <div className="flex flex-wrap gap-2">
           {industries.map((i) => (

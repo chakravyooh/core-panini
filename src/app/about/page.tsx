@@ -9,9 +9,9 @@ import { metrics } from "@/lib/content/metrics";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
 
 export const metadata: Metadata = {
-  title: "Mission, Vision & Values",
+  title: "Our Growth Partner Philosophy",
   description:
-    "The operating philosophy, leadership principles, and culture behind Core Panini — a consultancy where technology advice is worth the trust placed in it.",
+    "The mission, vision, and core beliefs behind Core Panini — a Growth Partner helping ambitious businesses scale with confidence through experienced leadership and practical execution.",
   alternates: { canonical: "/about" },
 };
 
@@ -19,63 +19,160 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="Mission · Vision · Values"
+        eyebrow="Growth Partner"
         title={
           <>
-            Technology advice worth
+            Helping ambitious businesses
             <br />
-            <span className="text-ink-3">the trust placed in it.</span>
+            <span className="text-ink-3">scale with confidence.</span>
           </>
         }
-        lead="We exist because the decisions that decide outcomes deserve senior people — and because honesty is too rare at the price the market charges for it."
+        lead="We bring experienced leaders who transform complexity into sustainable growth — working alongside your team, not outside it."
       />
 
-      {/* Mission & Vision */}
+      {/* Vision & Mission */}
       <section className="pb-4">
         <Container variant="w">
           <div className="grid gap-6 lg:grid-cols-2">
             <Reveal>
               <div className="h-full rounded-2xl border border-line bg-surface p-10">
-                <Eyebrow>Mission</Eyebrow>
-                <p className="h3 mt-6 max-w-md text-balance">{values.mission}</p>
+                <Eyebrow>Vision</Eyebrow>
+                <p className="h3 mt-6 max-w-md text-balance leading-snug">
+                  {values.vision}
+                </p>
               </div>
             </Reveal>
             <Reveal delay={0.08}>
               <div className="h-full rounded-2xl border border-line bg-surface p-10">
-                <Eyebrow>Vision</Eyebrow>
-                <p className="text-lg mt-6 leading-relaxed text-ink-2 max-w-md">
-                  {values.vision}
-                </p>
+                <Eyebrow>Mission</Eyebrow>
+                <div className="mt-6 flex flex-col gap-4 max-w-md">
+                  {values.mission.map((p, i) => (
+                    <p key={i} className="text-ink-2 leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
+                </div>
               </div>
             </Reveal>
           </div>
         </Container>
       </section>
 
-      {/* Core values */}
+      {/* Brand Story */}
       <section className="section-y">
         <Container variant="w">
           <SectionHeading
-            eyebrow="Core values"
+            eyebrow="Brand story"
             title={
               <>
-                What we will not
+                Why we
                 <br />
-                <span className="text-ink-3">compromise on.</span>
+                <span className="text-ink-3">created this company.</span>
               </>
             }
           />
-          <StaggerGroup className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3" stagger={0.05}>
-            {values.coreValues.map((v, i) => (
-              <StaggerItem key={v.title}>
-                <div className="h-full bg-bg p-8 flex flex-col gap-3">
+          <div className="mt-12 max-w-3xl flex flex-col gap-6">
+            {values.brandStory.map((p, i) => (
+              <Reveal key={i} delay={i * 0.04}>
+                <p
+                  className={
+                    i === values.brandStory.length - 1
+                      ? "text-xl leading-relaxed text-ink font-medium"
+                      : "text-lg leading-relaxed text-ink-2"
+                  }
+                >
+                  {p}
+                </p>
+              </Reveal>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Core Beliefs */}
+      <section className="section-y">
+        <Container variant="w">
+          <SectionHeading
+            eyebrow="Core beliefs"
+            title={
+              <>
+                What we
+                <br />
+                <span className="text-ink-3">stand for.</span>
+              </>
+            }
+            lead="Six convictions that guide every engagement, every decision, and every partnership."
+          />
+          <StaggerGroup
+            className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3"
+            stagger={0.05}
+          >
+            {values.coreBeliefs.map((b, i) => (
+              <StaggerItem key={b.title}>
+                <div className="h-full bg-bg p-8 flex flex-col gap-4">
                   <span className="eyebrow">{String(i + 1).padStart(2, "0")}</span>
-                  <h3 className="text-lg font-semibold text-ink">{v.title}</h3>
-                  <p className="text-sm text-ink-3 leading-relaxed">{v.body}</p>
+                  <h3 className="text-lg font-semibold text-ink">{b.title}</h3>
+                  <p className="text-sm text-ink-3 leading-relaxed">{b.body}</p>
                 </div>
               </StaggerItem>
             ))}
           </StaggerGroup>
+        </Container>
+      </section>
+
+      {/* Promise */}
+      <section className="section-y">
+        <Container variant="w">
+          <div className="rounded-3xl border border-line bg-surface p-10 md:p-16">
+            <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
+              <Reveal>
+                <Eyebrow>Our promise</Eyebrow>
+                <div className="mt-6 flex flex-col gap-5 max-w-xl">
+                  {values.promise.paragraphs.map((p, i) => (
+                    <p
+                      key={i}
+                      className={
+                        i === 0
+                          ? "h3 leading-snug text-balance"
+                          : "text-ink-2 leading-relaxed"
+                      }
+                    >
+                      {p}
+                    </p>
+                  ))}
+                </div>
+              </Reveal>
+              <Reveal delay={0.08}>
+                <ul className="flex flex-col gap-4">
+                  {values.promise.points.map((point) => (
+                    <li
+                      key={point}
+                      className="flex items-start gap-3 border-b border-line pb-4 text-ink-2"
+                    >
+                      <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-ink" />
+                      <span className="leading-relaxed">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Positioning band */}
+      <section className="section-y">
+        <Container variant="w">
+          <Reveal>
+            <div className="rounded-3xl border border-line bg-paper p-10 text-center md:p-16">
+              <p className="display text-balance text-ink-inv">
+                {values.positioning.headline}
+              </p>
+              <p className="mt-6 lead mx-auto max-w-2xl text-ink-inv-2 leading-relaxed">
+                {values.positioning.body}
+              </p>
+            </div>
+          </Reveal>
         </Container>
       </section>
 
@@ -125,11 +222,15 @@ export default function AboutPage() {
                 <span className="text-ink-3">ourselves to.</span>
               </>
             }
+            lead="Ten principles that define how our consultants work with clients — and with each other."
           />
-          <StaggerGroup className="mt-12 grid gap-4 md:grid-cols-2" stagger={0.06}>
-            {values.principles.map((p) => (
+          <StaggerGroup className="mt-12 grid gap-4 md:grid-cols-2" stagger={0.05}>
+            {values.principles.map((p, i) => (
               <StaggerItem key={p.title} className="h-full">
                 <div className="h-full rounded-2xl border border-line bg-bg p-7 flex flex-col gap-3">
+                  <span className="mono text-xs text-ink-4">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
                   <h3 className="text-lg font-semibold text-ink">{p.title}</h3>
                   <p className="text-sm text-ink-3 leading-relaxed">{p.body}</p>
                 </div>
@@ -145,7 +246,7 @@ export default function AboutPage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             <Reveal>
               <Eyebrow>Company culture</Eyebrow>
-              <h2 className="h3 mt-5">A place senior people want to stay.</h2>
+              <h2 className="h3 mt-5">A place experienced people want to stay.</h2>
               <ul className="mt-8 flex flex-col gap-3">
                 {values.culture.map((c) => (
                   <li key={c} className="flex items-center gap-3 border-b border-line pb-3 text-ink-2">

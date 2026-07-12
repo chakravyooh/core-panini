@@ -5,23 +5,23 @@ import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/reveal";
 const reasons = [
   {
     n: "01",
-    title: "Specialists, not generalists",
-    body: "Every engagement is led by senior people who have carried production responsibility at scale. No juniors on your account.",
+    title: "Senior expertise from day one",
+    body: "Every engagement is led by experienced practitioners with 11–16 years of hands-on leadership across technology, AI, product, data, compliance, and engineering. No handoffs. No junior delivery teams.",
   },
   {
     n: "02",
-    title: "We own the outcome",
-    body: "Accountable for the business result, not just the deliverable. Retention is earned in production, not at handover.",
+    title: "Partners in outcomes, not just execution",
+    body: "We don't stop at recommendations. We work alongside your team, sharing accountability from strategy through execution until measurable results are achieved.",
   },
   {
     n: "03",
-    title: "We tell you not to",
-    body: "If a rewrite is wrong, or build beats buy, we say so before you spend the money. Honesty is a service, not a risk.",
+    title: "Advice you can trust — even when it's not what you expect",
+    body: "Sometimes the right answer is to simplify, postpone, or avoid an investment altogether. We challenge assumptions, present trade-offs transparently, and recommend what's best for your business — not what's best for our billable hours.",
   },
   {
     n: "04",
-    title: "We leave it stronger",
-    body: "Architecture, team, and practices measurably better than we found them. Knowledge transfer is part of done.",
+    title: "Every engagement leaves you stronger",
+    body: "Our goal isn't to create dependency — it's to build capability. We leave behind stronger architectures, more capable teams, better engineering practices, and the knowledge to sustain growth long after the engagement ends.",
   },
 ];
 
@@ -32,15 +32,15 @@ export function WhyUs() {
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <Reveal>
             <SectionHeading
-              eyebrow="Why us"
+              eyebrow="Why Choose Us"
               title={
                 <>
-                  The difference shows up
+                  The value isn&apos;t in what we deliver.
                   <br />
-                  <span className="text-ink-3">in the result.</span>
+                  <span className="text-ink-3">It&apos;s in what your business becomes.</span>
                 </>
               }
-              lead="We are not the cheapest option. We are the one that costs less once the work is done."
+              lead="We don't measure success by presentations or project completion. We measure it by stronger teams, scalable systems, faster execution, and lasting business outcomes."
             />
           </Reveal>
           <StaggerGroup className="flex flex-col" stagger={0.08}>

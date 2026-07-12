@@ -22,7 +22,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Senior, low-ego, and accountable. They owned the outcome the way an internal team would. We have engaged them on three programs since.",
+      "Experienced, low-ego, and accountable. They owned the outcome the way an internal team would. We have engaged them on three programs since.",
     author: "Renata Oliveira",
     role: "Chief Information Officer",
     company: "A regional health system",
@@ -43,7 +43,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Calm, precise, and senior. The kind of partner you call when the problem is too important to delegate.",
+      "Calm, precise, and experienced. The kind of partner you call when the problem is too important to delegate.",
     author: "Hiroshi Sato",
     role: "Founder & CEO",
     company: "A payments fintech",

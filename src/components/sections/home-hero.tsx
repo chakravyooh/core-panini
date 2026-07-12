@@ -18,9 +18,9 @@ export function HomeHero() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, reduce ? 1 : 0]);
 
   const lines = [
-    "Senior technology specialists",
-    "for problems that decide",
-    "outcomes.",
+    "Helping Ambitious Businesses",
+    "Scale with",
+    "Confidence.",
   ];
 
   return (
@@ -62,7 +62,7 @@ export function HomeHero() {
                     delay: 0.1 + i * 0.12,
                   }}
                 >
-                  {line === "outcomes." ? (
+                  {line === "Confidence." ? (
                     <>
                       <span className="text-ink-3 italic font-[450]">{line}</span>
                     </>
@@ -80,9 +80,10 @@ export function HomeHero() {
             transition={{ duration: 0.7, ease: easeOut, delay: 0.5 }}
             className="lead mt-8 max-w-xl"
           >
-            An IT consultancy of senior specialists — not general developers.
-            We partner with organizations to solve the complex business problems
-            that technology makes possible, and the ones it cannot fix alone.
+            We partner with founders and leadership teams to solve critical
+            technology and business challenges through executive-level expertise
+            in AI, engineering, product, data, compliance, and organizational
+            transformation.
           </motion.p>
 
           <motion.div
@@ -106,11 +107,11 @@ export function HomeHero() {
             className="mt-16 grid grid-cols-2 gap-x-6 gap-y-8 border-t border-line pt-10 sm:grid-cols-4"
           >
             {heroMetrics.map((m) => (
-              <div key={m.label} className="flex flex-col gap-1.5">
-                <dt className="text-2xl font-semibold tracking-tight text-ink">
+              <div key={m.label} className="flex flex-col gap-2">
+                <dt className="text-xl font-semibold tracking-tight text-ink md:text-2xl">
                   {m.value}
                 </dt>
-                <dd className="text-xs text-ink-3 max-w-[10rem] leading-relaxed">
+                <dd className="text-xs text-ink-3 max-w-[14rem] leading-relaxed">
                   {m.label}
                 </dd>
               </div>

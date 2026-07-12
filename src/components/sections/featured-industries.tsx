@@ -16,12 +16,12 @@ export function FeaturedIndustries() {
             eyebrow="Industries"
             title={
               <>
-                Sector knowledge that
+                Experience that earns trust
                 <br />
-                <span className="text-ink-3">earns the first conversation.</span>
+                <span className="text-ink-3">from the first conversation.</span>
               </>
             }
-            lead="Specialists who have carried responsibility inside the industry — not just read about it."
+            lead="Our specialists have built, scaled, and led technology initiatives within the industries they serve. We bring practical insight shaped by real-world experience — not just frameworks and best practices."
           />
           <Reveal>
             <Link

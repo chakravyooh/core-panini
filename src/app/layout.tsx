@@ -22,11 +22,11 @@ const siteUrl = "https://chakravyooh.github.io/core-panini";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Core Panini — Senior Technology Specialists",
+    default: "Core Panini — Your Growth Partner",
     template: "%s · Core Panini",
   },
   description:
-    "Core Panini is an IT consultancy of senior specialists solving complex business problems through technology strategy, AI engineering, cloud architecture, and product engineering.",
+    "Core Panini is a Growth Partner helping ambitious businesses scale with confidence — through experienced leadership across technology strategy, AI engineering, cloud architecture, and product engineering.",
   keywords: [
     "IT consulting",
     "technology strategy",
@@ -44,15 +44,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Core Panini",
-    title: "Core Panini — Senior Technology Specialists",
+    title: "Core Panini — Your Growth Partner",
     description:
-      "An IT consultancy of senior specialists solving complex business problems through technology.",
+      "A Growth Partner helping ambitious businesses scale with confidence through experienced leadership across technology, AI, and product engineering.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Core Panini — Senior Technology Specialists",
+    title: "Core Panini — Your Growth Partner",
     description:
-      "An IT consultancy of senior specialists solving complex business problems through technology.",
+      "A Growth Partner helping ambitious businesses scale with confidence through experienced leadership across technology, AI, and product engineering.",
   },
   robots: {
     index: true,
@@ -68,7 +68,7 @@ const orgSchema = {
   name: "Core Panini",
   url: siteUrl,
   description:
-    "IT consultancy of senior specialists solving complex business problems through technology.",
+    "A Growth Partner helping ambitious businesses scale with confidence through experienced leadership across technology, AI, and product engineering.",
   sameAs: ["https://www.linkedin.com/company/core-panini"],
 };
 

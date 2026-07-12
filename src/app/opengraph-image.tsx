@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const dynamic = "force-static";
-export const alt = "Core Panini — Senior Technology Specialists";
+export const alt = "Core Panini — Your Growth Partner";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -54,10 +54,10 @@ export default function OpenGraphImage() {
               textTransform: "uppercase",
             }}
           >
-            IT Consultancy
+            Growth Partner
           </span>
           <div style={{ display: "flex", fontSize: "76px", lineHeight: 1.05, fontWeight: 600, letterSpacing: "-0.04em", maxWidth: "900px" }}>
-            Senior technology specialists for problems that decide outcomes.
+            Growth Partner for ambitious businesses scaling with confidence.
           </div>
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", color: "#71717a", fontSize: "26px" }}>

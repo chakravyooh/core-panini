@@ -20,7 +20,7 @@ export function TeamPageClient() {
         eyebrow="Our team"
         title={
           <>
-            Senior specialists,
+            Experienced specialists,
             <br />
             <span className="text-ink-3">not general developers.</span>
           </>
@@ -81,7 +81,7 @@ export function TeamPageClient() {
       </section>
 
       <FinalCta
-        title="Work with people this senior."
+        title="Work with people this experienced."
         body="We hire a small number of specialists each year. Clients come first — but we are always interested in the right people."
         primaryHref="/contact"
         primaryLabel="Start a conversation"
