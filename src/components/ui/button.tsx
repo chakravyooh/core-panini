@@ -5,7 +5,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 
-type Variant = "primary" | "secondary" | "ghost" | "light" | "light-outline";
+type Variant = "primary" | "secondary" | "ghost";
 type Size = "sm" | "md" | "lg";
 
 const base =
@@ -17,9 +17,6 @@ const variants: Record<Variant, string> = {
   secondary:
     "border border-line-strong text-ink hover:border-line-bright hover:bg-surface-2",
   ghost: "text-ink-2 hover:text-ink",
-  light: "bg-ink-inv text-paper hover:bg-ink-inv/90 hover:-translate-y-0.5",
-  "light-outline":
-    "border border-paper-3 text-ink-inv hover:bg-paper-2 hover:border-ink-inv",
 };
 
 const sizes: Record<Size, string> = {

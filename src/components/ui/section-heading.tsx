@@ -17,14 +17,12 @@ export function SectionHeading({
   lead,
   align = "left",
   className,
-  tone = "dark",
 }: {
   eyebrow?: string;
   title: ReactNode;
   lead?: ReactNode;
   align?: "left" | "center";
   className?: string;
-  tone?: "dark" | "light";
 }) {
   return (
     <div
@@ -34,25 +32,13 @@ export function SectionHeading({
         className
       )}
     >
-      {eyebrow && (
-        <Eyebrow className={tone === "light" ? "text-ink-inv-3" : ""}>
-          {eyebrow}
-        </Eyebrow>
-      )}
-      <h2
-        className={cn(
-          "h2",
-          tone === "light" ? "text-ink-inv" : "text-ink"
-        )}
-      >
-        {title}
-      </h2>
+      {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+      <h2 className="h2 text-ink">{title}</h2>
       {lead && (
         <p
           className={cn(
-            "lead max-w-xl",
-            align === "center" && "mx-auto",
-            tone === "light" ? "text-ink-inv-2" : "text-ink-2"
+            "lead max-w-xl text-ink-2",
+            align === "center" && "mx-auto"
           )}
         >
           {lead}

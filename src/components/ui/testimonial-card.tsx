@@ -4,39 +4,24 @@ import type { Testimonial } from "@/lib/content/testimonials";
 export function TestimonialCard({
   t,
   className,
-  tone = "dark",
 }: {
   t: Testimonial;
   className?: string;
-  tone?: "dark" | "light";
 }) {
   return (
     <figure
       className={cn(
-        "flex h-full flex-col justify-between gap-8 rounded-2xl border p-8",
-        tone === "light"
-          ? "border-paper-3 bg-white"
-          : "border-line bg-surface",
+        "flex h-full flex-col justify-between gap-8 rounded-2xl border border-line bg-surface p-8",
         className
       )}
     >
-      <blockquote
-        className={cn(
-          "text-lg leading-relaxed tracking-[-0.01em]",
-          tone === "light" ? "text-ink-inv" : "text-ink"
-        )}
-      >
-        <span className="text-ink-3 mr-1">“</span>
+      <blockquote className="text-lg leading-relaxed tracking-[-0.01em] text-ink">
+        <span className="text-ink-3 mr-1">&ldquo;</span>
         {t.quote}
-        <span className="text-ink-3 ml-1">”</span>
+        <span className="text-ink-3 ml-1">&rdquo;</span>
       </blockquote>
       <figcaption className="flex items-center gap-3">
-        <span
-          className={cn(
-            "inline-flex h-10 w-10 items-center justify-center rounded-full text-xs font-semibold",
-            tone === "light" ? "bg-ink-inv text-paper" : "bg-ink text-bg"
-          )}
-        >
+        <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-bg text-xs font-semibold">
           {t.author
             .split(" ")
             .map((n) => n[0])
@@ -44,14 +29,7 @@ export function TestimonialCard({
             .join("")}
         </span>
         <div className="flex flex-col">
-          <span
-            className={cn(
-              "text-sm font-medium",
-              tone === "light" ? "text-ink-inv" : "text-ink"
-            )}
-          >
-            {t.author}
-          </span>
+          <span className="text-sm font-medium text-ink">{t.author}</span>
           <span className="text-sm text-ink-3">
             {t.role}, {t.company}
           </span>

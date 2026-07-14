@@ -81,7 +81,7 @@ export default async function InsightDetail({
           </Reveal>
         </Container>
 
-        <Container variant="p" className="mt-16 md:mt-24">
+        <Container variant="c" className="container-p mt-16 md:mt-24">
           <div className="flex flex-col gap-8">
             {p.body.map((para, i) => (
               <Reveal key={i} delay={0.02 * i}>

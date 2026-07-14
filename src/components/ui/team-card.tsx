@@ -6,11 +6,9 @@ import type { TeamMember } from "@/lib/content/team";
 export function TeamCard({
   member,
   className,
-  tone = "dark",
 }: {
   member: TeamMember;
   className?: string;
-  tone?: "dark" | "light";
 }) {
   const initials = member.name
     .split(" ")
@@ -20,10 +18,7 @@ export function TeamCard({
   return (
     <article
       className={cn(
-        "group flex flex-col gap-5 rounded-2xl border p-6 transition-all duration-500",
-        tone === "light"
-          ? "border-paper-3 bg-white hover:border-ink-inv/20 hover:-translate-y-1"
-          : "border-line bg-surface hover:border-line-bright hover:bg-surface-2 hover:-translate-y-1",
+        "group flex flex-col gap-5 rounded-2xl border border-line bg-surface p-6 transition-all duration-500 hover:border-line-bright hover:bg-surface-2 hover:-translate-y-1",
         className
       )}
     >
@@ -40,9 +35,7 @@ export function TeamCard({
         </Link>
       </div>
       <div className="flex flex-col gap-1">
-        <h3 className={cn("text-lg font-semibold", tone === "light" ? "text-ink-inv" : "text-ink")}>
-          {member.name}
-        </h3>
+        <h3 className="text-lg font-semibold text-ink">{member.name}</h3>
         <p className="text-sm text-ink-2">{member.role}</p>
         <p className="text-xs text-ink-3 mono mt-1">{member.expertise}</p>
       </div>

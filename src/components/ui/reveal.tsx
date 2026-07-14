@@ -1,36 +1,30 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { motion, useReducedMotion } from "framer-motion";
 import { fadeUp, viewportOnce } from "@/lib/motion";
 import type { ReactNode } from "react";
 
 export function Reveal({
   children,
   className,
-  variants = fadeUp,
   delay = 0,
-  as = "div",
 }: {
   children: ReactNode;
   className?: string;
-  variants?: Variants;
   delay?: number;
-  as?: "div" | "span" | "li" | "section";
 }) {
   const reduce = useReducedMotion();
-  const MotionTag = motion[as];
   return (
-    <MotionTag
-      variants={reduce ? undefined : variants}
+    <motion.div
+      variants={reduce ? undefined : fadeUp}
       initial={reduce ? undefined : "hidden"}
       whileInView={reduce ? undefined : "visible"}
       viewport={reduce ? undefined : viewportOnce}
       transition={delay ? { delay } : undefined}
-      className={cn(className)}
+      className={className}
     >
       {children}
-    </MotionTag>
+    </motion.div>
   );
 }
 
@@ -48,7 +42,7 @@ export function StaggerGroup({
   const reduce = useReducedMotion();
   return (
     <motion.div
-      className={cn(className)}
+      className={className}
       variants={
         reduce
           ? undefined
@@ -69,15 +63,13 @@ export function StaggerGroup({
 export function StaggerItem({
   children,
   className,
-  variants = fadeUp,
 }: {
   children: ReactNode;
   className?: string;
-  variants?: Variants;
 }) {
   const reduce = useReducedMotion();
   return (
-    <motion.div variants={reduce ? undefined : variants} className={cn(className)}>
+    <motion.div variants={reduce ? undefined : fadeUp} className={className}>
       {children}
     </motion.div>
   );

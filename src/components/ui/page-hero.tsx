@@ -9,23 +9,16 @@ export function PageHero({
   title,
   lead,
   align = "left",
-  tone = "dark",
   children,
 }: {
   eyebrow: string;
   title: ReactNode;
   lead?: ReactNode;
   align?: "left" | "center";
-  tone?: "dark" | "light";
   children?: ReactNode;
 }) {
   return (
-    <section
-      className={cn(
-        "relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-20",
-        tone === "light" ? "bg-paper text-ink-inv" : "bg-bg text-ink"
-      )}
-    >
+    <section className="relative overflow-hidden pt-36 pb-16 md:pt-44 md:pb-20 bg-bg text-ink">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-line to-transparent"
@@ -35,9 +28,7 @@ export function PageHero({
         className={cn(align === "center" && "flex flex-col items-center text-center")}
       >
         <Reveal>
-          <Eyebrow className={tone === "light" ? "text-ink-inv-3" : ""}>
-            {eyebrow}
-          </Eyebrow>
+          <Eyebrow>{eyebrow}</Eyebrow>
         </Reveal>
         <Reveal delay={0.05}>
           <h1
@@ -55,7 +46,7 @@ export function PageHero({
               className={cn(
                 "lead mt-6 max-w-xl",
                 align === "center" && "mx-auto",
-                tone === "light" ? "text-ink-inv-2" : "text-ink-2"
+                "text-ink-2"
               )}
             >
               {lead}

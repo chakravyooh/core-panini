@@ -8,22 +8,15 @@ export function Tabs({
   tabs,
   panels,
   className,
-  tone = "dark",
 }: {
   tabs: string[];
   panels: React.ReactNode[];
   className?: string;
-  tone?: "dark" | "light";
 }) {
   const [active, setActive] = useState(0);
   return (
     <div className={className}>
-      <div
-        className={cn(
-          "flex flex-wrap gap-1 rounded-full border p-1",
-          tone === "light" ? "border-paper-3 bg-paper-2" : "border-line-strong bg-surface"
-        )}
-      >
+      <div className="flex flex-wrap gap-1 rounded-full border border-line-strong bg-surface p-1">
         {tabs.map((t, i) => (
           <button
             key={t}
@@ -40,11 +33,7 @@ export function Tabs({
             <span
               className={cn(
                 "relative z-10 transition-colors",
-                active === i
-                  ? "text-bg"
-                  : tone === "light"
-                    ? "text-ink-inv-3 hover:text-ink-inv"
-                    : "text-ink-3 hover:text-ink"
+                active === i ? "text-bg" : "text-ink-3 hover:text-ink"
               )}
             >
               {t}

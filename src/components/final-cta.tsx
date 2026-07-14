@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
@@ -48,28 +46,5 @@ export function FinalCta({
         </div>
       </Container>
     </section>
-  );
-}
-
-export function CtaLink({
-  href,
-  children,
-  className,
-}: {
-  href: string;
-  children: React.ReactNode;
-  className?: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className={
-        "inline-flex items-center gap-1 text-sm font-medium text-ink hover:text-ink group " +
-        (className ?? "")
-      }
-    >
-      {children}
-      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-    </Link>
   );
 }

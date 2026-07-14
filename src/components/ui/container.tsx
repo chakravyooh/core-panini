@@ -8,29 +8,8 @@ export function Container({
 }: {
   children: ReactNode;
   className?: string;
-  variant?: "c" | "w" | "p";
+  variant?: "c" | "w";
 }) {
-  const cls = variant === "w" ? "container-w" : variant === "p" ? "container-p" : "container-c";
+  const cls = variant === "w" ? "container-w" : "container-c";
   return <div className={cn(cls, className)}>{children}</div>;
-}
-
-export function Section({
-  children,
-  className,
-  id,
-  tone = "dark",
-}: {
-  children: ReactNode;
-  className?: string;
-  id?: string;
-  tone?: "dark" | "light";
-}) {
-  return (
-    <section
-      id={id}
-      className={cn("section-y relative", tone === "light" ? "bg-paper text-ink-inv" : "", className)}
-    >
-      {children}
-    </section>
-  );
 }
