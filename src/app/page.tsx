@@ -5,7 +5,6 @@ import { WhyUs } from "@/components/sections/why-us";
 import { FeaturedIndustries } from "@/components/sections/featured-industries";
 import { FeaturedCaseStudies } from "@/components/sections/featured-case-studies";
 import { Testimonials } from "@/components/sections/testimonials";
-import { MetricsBand } from "@/components/sections/metrics-band";
 import { FinalCta } from "@/components/final-cta";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <FeaturedIndustries />
       <FeaturedCaseStudies />
       <Testimonials />
-      <MetricsBand />
       <FinalCta />
     </>
   );
