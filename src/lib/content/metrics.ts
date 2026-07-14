@@ -1,10 +1,3 @@
-export const metrics = [
-  { value: 220, suffix: "+", label: "Programs delivered" },
-  { value: 12, suffix: " yrs", label: "Average specialist experience" },
-  { value: 4, suffix: ".1B", label: "In client revenue influenced" },
-  { value: 98, suffix: "%", label: "Client retention" },
-];
-
 export const heroMetrics = [
   { value: "100%", label: "Senior Experts — Every engagement is led by experienced practitioners." },
   { value: "11–16 Years", label: "Average experience across our team." },

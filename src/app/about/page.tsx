@@ -5,8 +5,7 @@ import { SectionHeading, Eyebrow } from "@/components/ui/section-heading";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/reveal";
 import { FinalCta } from "@/components/final-cta";
 import { values } from "@/lib/content/values";
-import { metrics } from "@/lib/content/metrics";
-import { AnimatedCounter } from "@/components/ui/animated-counter";
+import { heroMetrics } from "@/lib/content/metrics";
 
 export const metadata: Metadata = {
   title: "Our Growth Partner Philosophy",
@@ -256,21 +255,21 @@ export default function AboutPage() {
                 ))}
               </ul>
             </Reveal>
-            <Reveal delay={0.1}>
-              <Eyebrow>By the numbers</Eyebrow>
-              <div className="mt-8 grid grid-cols-2 gap-y-10">
-                {metrics.map((m) => (
-                  <div key={m.label} className="flex flex-col gap-2">
-                    <span className="text-4xl font-semibold tracking-tight text-ink md:text-5xl">
-                      <AnimatedCounter value={m.value} suffix={m.suffix} />
-                    </span>
-                    <span className="text-sm text-ink-3 max-w-[12rem] leading-relaxed">
-                      {m.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
+              <Reveal delay={0.1}>
+                <Eyebrow>By the numbers</Eyebrow>
+                <div className="mt-8 grid grid-cols-2 gap-y-10">
+                  {heroMetrics.map((m) => (
+                    <div key={m.label} className="flex flex-col gap-2">
+                      <span className="text-4xl font-semibold tracking-tight text-ink md:text-5xl">
+                        {m.value}
+                      </span>
+                      <span className="text-sm text-ink-3 max-w-[12rem] leading-relaxed">
+                        {m.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </Reveal>
           </div>
         </Container>
       </section>
