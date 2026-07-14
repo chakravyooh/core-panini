@@ -1,12 +1,18 @@
 "use client";
 
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
+import dynamic from "next/dynamic";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Eyebrow } from "@/components/ui/section-heading";
 import { heroMetrics } from "@/lib/content/metrics";
 import { easeOut } from "@/lib/motion";
+
+const MonolithCanvas = dynamic(
+  () => import("@/components/three/monolith-scene"),
+  { ssr: false }
+);
 
 export function HomeHero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -32,6 +38,16 @@ export function HomeHero() {
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="absolute inset-x-0 top-0 h-[60rem] grid-lines opacity-30 mask-fade-b" />
         <div className="absolute left-1/2 top-0 h-[40rem] w-[60rem] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(255,255,255,0.06),transparent)]" />
+      </div>
+
+      {/* 3D monolith — background, right-half on lg+ */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[1] hidden lg:block"
+      >
+        <div className="absolute right-0 top-0 h-full w-[55%]">
+          <MonolithCanvas scrollProgress={scrollYProgress} reduced={!!reduce} />
+        </div>
       </div>
 
       <Container variant="w" className="relative">
